@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, Mail, MapPin, ChevronRight, Package, Truck, Shield, Award, Users, CheckCircle, ArrowRight, Facebook, Twitter, Linkedin, Instagram, Clock, Star, TrendingUp, Heart } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, Package, Truck, Shield, Award, Users, CheckCircle, ArrowRight, Facebook, Twitter, Linkedin, Instagram, Star } from 'lucide-react';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
@@ -400,7 +400,7 @@ const Footer = ({ navigateTo }) => (
           <p className="text-sm mb-4">Leading medical distributor in Tirupati since 2005</p>
           <div className="flex space-x-3">
             {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
-              <button key={i} className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center transition-colors" style={{['&:hover' as any]: {background: '#ea7425'}}}>
+              <button key={i} className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#ea7425] transition-colors">
                 <Icon className="w-4 h-4" />
               </button>
             ))}
